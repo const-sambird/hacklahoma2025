@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Map {
+            Annotation("Devon Energy Hall", coordinate: CLLocationCoordinate2D(latitude: 35.210752, longitude: -97.441813)) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(Color.yellow)
+                    Text("⁉️")
+                }
+            }
         }
-        .padding()
     }
 }
 
