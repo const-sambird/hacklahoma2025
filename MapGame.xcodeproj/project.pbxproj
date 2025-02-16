@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		031437CE2D61D05900AF9897 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 031437CD2D61D05900AF9897 /* SwiftCSV */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		22CE07842D6134B7001A3DAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031437CE2D61D05900AF9897 /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031437CC2D61D05900AF9897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22CE076A2D6134B5001A3DAE = {
 			isa = PBXGroup;
 			children = (
 				22CE07752D6134B5001A3DAE /* MapGame */,
 				22CE07862D6134B7001A3DAE /* MapGameTests */,
 				22CE07902D6134B7001A3DAE /* MapGameUITests */,
+				031437CC2D61D05900AF9897 /* Frameworks */,
 				22CE07742D6134B5001A3DAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = MapGame;
 			packageProductDependencies = (
+				031437CD2D61D05900AF9897 /* SwiftCSV */,
 			);
 			productName = MapGame;
 			productReference = 22CE07732D6134B5001A3DAE /* MapGame.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 22CE076A2D6134B5001A3DAE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0314379D2D61C56100AF9897 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 22CE07742D6134B5001A3DAE /* Products */;
 			projectDirPath = "";
@@ -560,6 +577,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0314379D2D61C56100AF9897 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		031437CD2D61D05900AF9897 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0314379D2D61C56100AF9897 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22CE076B2D6134B5001A3DAE /* Project object */;
 }

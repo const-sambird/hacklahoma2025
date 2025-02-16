@@ -9,24 +9,35 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    let overlay: [CLLocationCoordinate2D] = [
-        CLLocationCoordinate2D(latitude: 35.2009086, longitude: -97.4470949),
-        CLLocationCoordinate2D(latitude: 35.1997618, longitude: -97.4471083),
-        CLLocationCoordinate2D(latitude: 35.1997519, longitude: -97.4442457),
-        CLLocationCoordinate2D(latitude: 35.200913, longitude: -97.4442651),
-        //CLLocationCoordinate2D(latitude: 35.2009086, longitude: -97.4470949),
-    ]
-    
+    @StateObject var csvParser = CSVParser()
     @ObservedObject var player: Player
+
+    // Define the camera position using a region.
+    @State private var cameraPosition = MapCameraPosition.region(
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 35.200904, longitude: -97.4470867),
+            span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        )
+    )
     
     var body: some View {
         ZStack {
-            Map {
+            // Use the new Map initializer that takes a MapContentBuilder.
+            Map(position: $cameraPosition) {
+                // Add a marker from sample data.
                 Marker(Waypoint.sample[3].name, coordinate: Waypoint.sample[3].asCoordinate())
-                MapPolygon(coordinates: overlay)
-                    .foregroundStyle(.gray.opacity(1))
+                
+                // Add each polygon parsed from the CSV.
+                ForEach(csvParser.polygons, id: \.self) { polygon in
+                    MapPolygon(coordinates: polygon.map { $0.coordinate })
+                        .foregroundStyle(.black.opacity(1))
+                }
+                
+                // You can also add user location if needed:
+                // UserAnnotation()
             }
             .mapStyle(.standard(elevation: .realistic))
+            
             VStack {
                 StatsOverlayView(player: player)
                 Spacer()
