@@ -19,6 +19,7 @@ struct ContentView: View {
             Tab("Map", systemImage: "map.fill", value: "map") {
                 MapView(player: player, areas: $areas)
             }
+            .badge(areas.count)
             Tab("Player", systemImage: "person.fill", value: "player") {
                 PlayerView()
             }
