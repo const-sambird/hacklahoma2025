@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import GLKit
 
 struct MapView: View {
     let overlay: [CLLocationCoordinate2D] = [
@@ -31,9 +32,11 @@ struct MapView: View {
             Map(position: $position) {
                 UserAnnotation()
                 Marker(Waypoint.sample[3].name, coordinate: Waypoint.sample[3].asCoordinate())
-                ForEach(areas) { area in
-                    MapPolygon(coordinates: area.asMapCoords())
-                        .foregroundStyle(.gray.opacity(area.mapOpacity))
+                ForEach(Array(areas.enumerated()), id: \.element.id) { offset, item in
+                    MapPolygon(coordinates: item.asMapCoords())
+                        .foregroundStyle(.gray.opacity(item.mapOpacity))
+                        .stroke(Color.blue, lineWidth: 1)
+                    Marker("Polygon \(offset)", coordinate: getCenterCoord(points: item.asMapCoords()))
                 }
             }
             .mapStyle(.standard(elevation: .realistic))
@@ -64,7 +67,7 @@ struct MapView: View {
             }
         }
         .sheet(isPresented: $isPresentingUnlockedView) {
-            Text("UnlockView")
+            UnlockView(isShowing: $isPresentingUnlockedView)
         }
     }
     
@@ -81,7 +84,7 @@ struct MapView: View {
             }
         }
         
-        if var foundArea = areaToFind {
+        if let foundArea = areaToFind {
             areaToPresent = foundArea
             if foundArea.isDiscovered {
                 isPresentingDiscoveryView = true
@@ -91,6 +94,30 @@ struct MapView: View {
                 areas[index].isDiscovered = true
             }
         }
+    }
+    
+    func getCenterCoord(points: [CLLocationCoordinate2D]) -> CLLocationCoordinate2D{
+        var x:Float = 0.0;
+        var y:Float = 0.0;
+        var z:Float = 0.0;
+        for points in points {
+            let lat = GLKMathDegreesToRadians(Float(points.latitude));
+            let long = GLKMathDegreesToRadians(Float(points.longitude));
+            
+            x += cos(lat) * cos(long);
+            
+            y += cos(lat) * sin(long);
+            
+            z += sin(lat);
+        }
+        x = x / Float(points.count);
+        y = y / Float(points.count);
+        z = z / Float(points.count);
+        let resultLong = atan2(y, x);
+        let resultHyp = sqrt(x * x + y * y);
+        let resultLat = atan2(z, resultHyp);
+        let result = CLLocationCoordinate2D(latitude: CLLocationDegrees(GLKMathRadiansToDegrees(Float(resultLat))), longitude: CLLocationDegrees(GLKMathRadiansToDegrees(Float(resultLong))));
+        return result;
     }
 }
 
