@@ -31,7 +31,6 @@
 		22CE07732D6134B5001A3DAE /* MapGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CE07832D6134B7001A3DAE /* MapGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CE078D2D6134B7001A3DAE /* MapGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22E8EA422D61D92B00437753 /* MapGame.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MapGame.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -88,7 +87,6 @@
 		22CE076A2D6134B5001A3DAE = {
 			isa = PBXGroup;
 			children = (
-				22E8EA422D61D92B00437753 /* MapGame.xctestplan */,
 				22CE07752D6134B5001A3DAE /* MapGame */,
 				22CE07862D6134B7001A3DAE /* MapGameTests */,
 				22CE07902D6134B7001A3DAE /* MapGameUITests */,

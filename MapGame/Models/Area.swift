@@ -46,21 +46,21 @@ struct Area: Codable, Identifiable {
 
 extension Area {
     static var sample: [Area] = [
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Couch Cafe", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.200904, longitude: -97.4470867),
             Coordinate(latitude: 35.199769, longitude: -97.4470977),
             Coordinate(latitude: 35.199773, longitude: -97.4442647),
             Coordinate(latitude: 35.200913, longitude: -97.444265),
             Coordinate(latitude: 35.200904, longitude: -97.4470867),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Walker Center", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.200909, longitude: -97.447095),
             Coordinate(latitude: 35.200913, longitude: -97.444265),
             Coordinate(latitude: 35.202103, longitude: -97.44426),
             Coordinate(latitude: 35.202103, longitude: -97.447093),
             Coordinate(latitude: 35.200909, longitude: -97.447095),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Gaylord Family Oklahoma Memorial Stadium", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.207482, longitude: -97.441285),
             Coordinate(latitude: 35.207484, longitude: -97.443424),
             Coordinate(latitude: 35.20646, longitude: -97.443496),
@@ -80,14 +80,14 @@ extension Area {
             Coordinate(latitude: 35.207104, longitude: -97.441287),
             Coordinate(latitude: 35.207482, longitude: -97.441285),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Cate Centers and OU Food Pantry", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.203888, longitude: -97.444247),
             Coordinate(latitude: 35.203898, longitude: -97.447065),
             Coordinate(latitude: 35.202103, longitude: -97.447093),
             Coordinate(latitude: 35.202103, longitude: -97.44426),
             Coordinate(latitude: 35.203888, longitude: -97.444247),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "South Oval", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.203888, longitude: -97.444247),
             Coordinate(latitude: 35.207454, longitude: -97.444225),
             Coordinate(latitude: 35.207459, longitude: -97.444855),
@@ -98,7 +98,7 @@ extension Area {
             Coordinate(latitude: 35.203898, longitude: -97.447065),
             Coordinate(latitude: 35.203888, longitude: -97.444247),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Dunham and Headington Honors College", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.203888, longitude: -97.444247),
             Coordinate(latitude: 35.202554, longitude: -97.444257),
             Coordinate(latitude: 35.202558, longitude: -97.443891),
@@ -111,7 +111,7 @@ extension Area {
             Coordinate(latitude: 35.203876, longitude: -97.441278),
             Coordinate(latitude: 35.203888, longitude: -97.444247),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Headington Hall", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.202826, longitude: -97.441336),
             Coordinate(latitude: 35.202507, longitude: -97.441318),
             Coordinate(latitude: 35.202507, longitude: -97.440188),
@@ -119,7 +119,7 @@ extension Area {
             Coordinate(latitude: 35.203876, longitude: -97.441278),
             Coordinate(latitude: 35.202826, longitude: -97.441336),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Jenkins Parking Garage", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.202507, longitude: -97.441318),
             Coordinate(latitude: 35.202826, longitude: -97.441336),
             Coordinate(latitude: 35.202834, longitude: -97.442251),
@@ -127,7 +127,7 @@ extension Area {
             Coordinate(latitude: 35.200868, longitude: -97.441308),
             Coordinate(latitude: 35.202507, longitude: -97.441318),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Sarkeys Fitness Center", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.200873, longitude: -97.442252),
             Coordinate(latitude: 35.202834, longitude: -97.442251),
             Coordinate(latitude: 35.202835, longitude: -97.442371),
@@ -139,7 +139,7 @@ extension Area {
             Coordinate(latitude: 35.200913, longitude: -97.444265),
             Coordinate(latitude: 35.200873, longitude: -97.442252),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Cross Village Parking", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.200913, longitude: -97.444265),
             Coordinate(latitude: 35.199773, longitude: -97.444254),
             Coordinate(latitude: 35.199756, longitude: -97.441303),
@@ -147,7 +147,7 @@ extension Area {
             Coordinate(latitude: 35.200873, longitude: -97.442252),
             Coordinate(latitude: 35.200913, longitude: -97.444265),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Cross Village", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.199773, longitude: -97.444254),
             Coordinate(latitude: 35.198067, longitude: -97.444256),
             Coordinate(latitude: 35.19805, longitude: -97.442499),
@@ -158,7 +158,7 @@ extension Area {
             Coordinate(latitude: 35.199756, longitude: -97.441303),
             Coordinate(latitude: 35.199773, longitude: -97.444254),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Murray Case Sells Swim Complex", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.198067, longitude: -97.444256),
             Coordinate(latitude: 35.196705, longitude: -97.44424),
             Coordinate(latitude: 35.196736, longitude: -97.441327),
@@ -169,14 +169,14 @@ extension Area {
             Coordinate(latitude: 35.19805, longitude: -97.442499),
             Coordinate(latitude: 35.198067, longitude: -97.444256),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Thurman J. White Forum Building", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.199769, longitude: -97.4470977),
             Coordinate(latitude: 35.19668, longitude: -97.447118),
             Coordinate(latitude: 35.196705, longitude: -97.44424),
             Coordinate(latitude: 35.199773, longitude: -97.444254),
             Coordinate(latitude: 35.199769, longitude: -97.4470977),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "OU Track and Field Complexes", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.203876, longitude: -97.441278),
             Coordinate(latitude: 35.203883, longitude: -97.440175),
             Coordinate(latitude: 35.203885, longitude: -97.437051),
@@ -194,7 +194,7 @@ extension Area {
             Coordinate(latitude: 35.204703, longitude: -97.441286),
             Coordinate(latitude: 35.203876, longitude: -97.441278),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Duck Pond", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.203885, longitude: -97.437051),
             Coordinate(latitude: 35.203863, longitude: -97.432904),
             Coordinate(latitude: 35.207471, longitude: -97.435202),
@@ -202,14 +202,14 @@ extension Area {
             Coordinate(latitude: 35.207487, longitude: -97.436979),
             Coordinate(latitude: 35.203885, longitude: -97.437051),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "OU Clock Tower", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.208057, longitude: -97.44675),
             Coordinate(latitude: 35.20814, longitude: -97.44675),
             Coordinate(latitude: 35.20814, longitude: -97.446828),
             Coordinate(latitude: 35.208058, longitude: -97.446828),
             Coordinate(latitude: 35.208057, longitude: -97.44675),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Bizzell Memorial Library", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.208141, longitude: -97.446792),
             Coordinate(latitude: 35.20814, longitude: -97.44675),
             Coordinate(latitude: 35.208057, longitude: -97.44675),
@@ -220,7 +220,7 @@ extension Area {
             Coordinate(latitude: 35.208378, longitude: -97.446794),
             Coordinate(latitude: 35.208141, longitude: -97.446792),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "McCasland Field House", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.207482, longitude: -97.44128),
             Coordinate(latitude: 35.208582, longitude: -97.441284),
             Coordinate(latitude: 35.208586, longitude: -97.441795),
@@ -230,7 +230,7 @@ extension Area {
             Coordinate(latitude: 35.207484, longitude: -97.44277),
             Coordinate(latitude: 35.207482, longitude: -97.44128),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "North East Campus Parking", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.208582, longitude: -97.441284),
             Coordinate(latitude: 35.207482, longitude: -97.44128),
             Coordinate(latitude: 35.207483, longitude: -97.440092),
@@ -244,7 +244,7 @@ extension Area {
             Coordinate(latitude: 35.209675, longitude: -97.441288),
             Coordinate(latitude: 35.208582, longitude: -97.441284),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Anne and Henry Zarrow School of Social Work", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.206891, longitude: -97.447917),
             Coordinate(latitude: 35.207491, longitude: -97.447915),
             Coordinate(latitude: 35.207512, longitude: -97.44791),
@@ -252,21 +252,21 @@ extension Area {
             Coordinate(latitude: 35.206892, longitude: -97.448455),
             Coordinate(latitude: 35.206891, longitude: -97.447917),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Sarkey's Energy Center", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.20968, longitude: -97.439726),
             Coordinate(latitude: 35.211119, longitude: -97.439736),
             Coordinate(latitude: 35.211121, longitude: -97.441268),
             Coordinate(latitude: 35.209675, longitude: -97.441288),
             Coordinate(latitude: 35.20968, longitude: -97.439726),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "College of Engineering Quad", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.211121, longitude: -97.441268),
             Coordinate(latitude: 35.211132, longitude: -97.443723),
             Coordinate(latitude: 35.20983, longitude: -97.443737),
             Coordinate(latitude: 35.209813, longitude: -97.441286),
             Coordinate(latitude: 35.211121, longitude: -97.441268),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "OU Facilities and Information Technology", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.209813, longitude: -97.441286),
             Coordinate(latitude: 35.20983, longitude: -97.443737),
             Coordinate(latitude: 35.208653, longitude: -97.443738),
@@ -276,7 +276,7 @@ extension Area {
             Coordinate(latitude: 35.208582, longitude: -97.441284),
             Coordinate(latitude: 35.209813, longitude: -97.441286),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Michael F. Price College of Business", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.208373, longitude: -97.444856),
             Coordinate(latitude: 35.207459, longitude: -97.444855),
             Coordinate(latitude: 35.207454, longitude: -97.444225),
