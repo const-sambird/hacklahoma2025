@@ -94,6 +94,9 @@ struct MapView: View {
                 areas[index].isDiscovered = true
             }
         }
+        
+        let completed = areas.filter { $0.isDiscovered }.count
+        progress = Double(completed) / Double(areas.count)
     }
     
     func getCenterCoord(points: [CLLocationCoordinate2D]) -> CLLocationCoordinate2D{

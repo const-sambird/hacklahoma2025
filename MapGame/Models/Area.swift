@@ -19,7 +19,7 @@ struct Area: Codable, Identifiable {
         if isDiscovered {
             return 0.3
         } else {
-            return 1
+            return 0.5
         }
     }
     
@@ -298,7 +298,7 @@ extension Area {
             Coordinate(latitude: 35.208648, longitude: -97.442762),
             Coordinate(latitude: 35.208653, longitude: -97.443738),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Wagner Hall", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.210195, longitude: -97.443732),
             Coordinate(latitude: 35.210204, longitude: -97.444711),
             Coordinate(latitude: 35.209285, longitude: -97.444744),
@@ -308,7 +308,7 @@ extension Area {
             Coordinate(latitude: 35.20983, longitude: -97.443737),
             Coordinate(latitude: 35.210195, longitude: -97.443732),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Oklahoma Memorial Union", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.209686, longitude: -97.445364),
             Coordinate(latitude: 35.209696, longitude: -97.444728),
             Coordinate(latitude: 35.210204, longitude: -97.444711),
@@ -317,7 +317,7 @@ extension Area {
             Coordinate(latitude: 35.211143, longitude: -97.44537),
             Coordinate(latitude: 35.209686, longitude: -97.445364),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Jacobson Hall - OU Visitor Center", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.209731, longitude: -97.445998),
             Coordinate(latitude: 35.209938, longitude: -97.445999),
             Coordinate(latitude: 35.209942, longitude: -97.446629),
@@ -332,7 +332,7 @@ extension Area {
             Coordinate(latitude: 35.209095, longitude: -97.445996),
             Coordinate(latitude: 35.209731, longitude: -97.445998),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "The Blender (Physical Sciences Center)", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.20902, longitude: -97.4478853),
             Coordinate(latitude: 35.207512, longitude: -97.4479113),
             Coordinate(latitude: 35.207491, longitude: -97.4479163),
@@ -345,7 +345,7 @@ extension Area {
             Coordinate(latitude: 35.209013, longitude: -97.4467953),
             Coordinate(latitude: 35.20902, longitude: -97.4478853),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "The Clock Tower", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.209624, longitude: -97.447874),
             Coordinate(latitude: 35.209642, longitude: -97.447549),
             Coordinate(latitude: 35.209765, longitude: -97.447348),
@@ -380,7 +380,7 @@ extension Area {
             Coordinate(latitude: 35.210477, longitude: -97.447871),
             Coordinate(latitude: 35.209624, longitude: -97.447874),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Pastoral Dreamer Sculpture", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.210392, longitude: -97.446725),
             Coordinate(latitude: 35.210406, longitude: -97.446728),
             Coordinate(latitude: 35.210421, longitude: -97.446733),
@@ -408,7 +408,7 @@ extension Area {
             Coordinate(latitude: 35.210373, longitude: -97.446728),
             Coordinate(latitude: 35.210392, longitude: -97.446725),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Fred Jones Art Museum", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.210477, longitude: -97.447871),
             Coordinate(latitude: 35.210474, longitude: -97.447612),
             Coordinate(latitude: 35.210423, longitude: -97.447429),
@@ -436,7 +436,7 @@ extension Area {
             Coordinate(latitude: 35.211121, longitude: -97.447872),
             Coordinate(latitude: 35.210477, longitude: -97.447871),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Goddard Health Center", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.208698, longitude: -97.44789),
             Coordinate(latitude: 35.208704, longitude: -97.449021),
             Coordinate(latitude: 35.207522, longitude: -97.44903),
@@ -444,7 +444,7 @@ extension Area {
             Coordinate(latitude: 35.207512, longitude: -97.44791),
             Coordinate(latitude: 35.208698, longitude: -97.44789),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Fine Arts Building", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.208704, longitude: -97.449021),
             Coordinate(latitude: 35.208698, longitude: -97.44789),
             Coordinate(latitude: 35.20902, longitude: -97.447884),
@@ -452,7 +452,7 @@ extension Area {
             Coordinate(latitude: 35.209161, longitude: -97.449027),
             Coordinate(latitude: 35.208704, longitude: -97.449021),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Catlett Music Center", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.211121, longitude: -97.447872),
             Coordinate(latitude: 35.211112, longitude: -97.448995),
             Coordinate(latitude: 35.209161, longitude: -97.449027),
@@ -461,7 +461,7 @@ extension Area {
             Coordinate(latitude: 35.210477, longitude: -97.447871),
             Coordinate(latitude: 35.211121, longitude: -97.447872),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "North Oval (Parrington Oval)", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.211132, longitude: -97.445986),
             Coordinate(latitude: 35.210427, longitude: -97.446001),
             Coordinate(latitude: 35.209938, longitude: -97.445999),
@@ -478,7 +478,7 @@ extension Area {
             Coordinate(latitude: 35.211143, longitude: -97.44537),
             Coordinate(latitude: 35.211132, longitude: -97.445986),
         ]),
-        Area(name: "FIXME", desc: "FIXME", vertices: [
+        Area(name: "Reserve Officers' Training Corps Building", desc: "FIXME", vertices: [
             Coordinate(latitude: 35.207454, longitude: -97.444225),
             Coordinate(latitude: 35.2062859, longitude: -97.4442355),
             Coordinate(latitude: 35.206384, longitude: -97.444102),
