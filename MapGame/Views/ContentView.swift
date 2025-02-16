@@ -9,19 +9,21 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
+    @State private var selected = "map"
+    @ObservedObject var player: Player
+    
     var body: some View {
-        Map {
-            Annotation("Devon Energy Hall", coordinate: CLLocationCoordinate2D(latitude: 35.210752, longitude: -97.441813)) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 5)
-                        .fill(Color.yellow)
-                    Text("⁉️")
-                }
+        TabView(selection: $selected) {
+            Tab("Map", systemImage: "map.fill", value: "map") {
+                MapView(player: player)
+            }
+            Tab("Player", systemImage: "person.fill", value: "player") {
+                PlayerView()
             }
         }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(player: Player.sample[0])
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct MapGameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(player: Player.sample[0])
         }
     }
 }

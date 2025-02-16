@@ -23,8 +23,8 @@ struct Waypoint: Codable, Identifiable {
         self.quest = quest
     }
     
-    func asCoordinate(latitude: Double, longitude: Double) -> CLLocationCoordinate2D {
-        .init(latitude: latitude, longitude: longitude)
+    func asCoordinate() -> CLLocationCoordinate2D {
+        .init(latitude: self.latitude, longitude: self.longitude)
     }
 }
 
@@ -32,6 +32,7 @@ extension Waypoint {
     static var sample: [Waypoint] = [
         Waypoint(id: "andrews-park", latitude: 35.223509, longitude: -97.447429, name: "Andrews Park"),
         Waypoint(id: "lloyd-noble-center", latitude: 35.187421, longitude: -97.444105, name: "Lloyd Noble Center"),
-        Waypoint(id: "jimmie-austin-golf-club", latitude: 35.189606, longitude: -97.428579, name: "Jimmie Austin Golf Club")
+        Waypoint(id: "jimmie-austin-golf-club", latitude: 35.189606, longitude: -97.428579, name: "Jimmie Austin Golf Club"),
+        Waypoint(id: "couch-restaurants", latitude: 35.200326, longitude: -97.445748, name: "Couch Restaurants")
     ]
 }
