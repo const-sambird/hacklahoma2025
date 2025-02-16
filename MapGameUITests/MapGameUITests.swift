@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import CoreLocation
 
 final class MapGameUITests: XCTestCase {
 
@@ -24,6 +25,8 @@ final class MapGameUITests: XCTestCase {
 
     @MainActor
     func testExample() throws {
+        XCUIDevice.shared.location = XCUILocation(location: CLLocation(latitude: 35.21071, longitude: -97.44175))
+        
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()

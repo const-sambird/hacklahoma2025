@@ -1,0 +1,40 @@
+{
+  "configurations" : [
+    {
+      "id" : "EBA00746-692E-4C9B-AC4F-BC9A85E45C4D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "locationScenario" : {
+      "identifier" : "..\/..\/MapGameUITests\/CampusLocation.gpx"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MapGame.xcodeproj",
+      "identifier" : "22CE07722D6134B5001A3DAE",
+      "name" : "MapGame"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MapGame.xcodeproj",
+        "identifier" : "22CE07822D6134B7001A3DAE",
+        "name" : "MapGameTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MapGame.xcodeproj",
+        "identifier" : "22CE078C2D6134B7001A3DAE",
+        "name" : "MapGameUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

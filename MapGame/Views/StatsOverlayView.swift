@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct StatsOverlayView: View {
-    @ObservedObject var player: Player
+    @Binding var progress: Double
     
     var body: some View {
         HStack() {
-            Spacer()
             VStack {
-                Text("Points")
+                Text("Progress")
                     .font(.headline)
-                Text("\(player.score)")
+                Text(String(format: "%.2f", progress * 100) + "%")
             }
             .padding()
             .background(.gray.opacity(0.9))
@@ -27,5 +26,5 @@ struct StatsOverlayView: View {
 }
 
 #Preview {
-    StatsOverlayView(player: Player.sample[0])
+    StatsOverlayView(progress: .constant(0.9))
 }

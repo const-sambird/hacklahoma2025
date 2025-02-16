@@ -11,11 +11,13 @@ import MapKit
 struct ContentView: View {
     @State private var selected = "map"
     @ObservedObject var player: Player
+    @Binding var areas: [Area]
+    let saveAction: () -> Void
     
     var body: some View {
         TabView(selection: $selected) {
             Tab("Map", systemImage: "map.fill", value: "map") {
-                MapView(player: player)
+                MapView(player: player, areas: $areas)
             }
             Tab("Player", systemImage: "person.fill", value: "player") {
                 PlayerView()
@@ -25,5 +27,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(player: Player.sample[0])
+    ContentView(player: Player.sample[0], areas: .constant(Area.sample), saveAction: {})
 }
