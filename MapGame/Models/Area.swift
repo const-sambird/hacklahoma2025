@@ -19,7 +19,7 @@ struct Area: Codable, Identifiable {
         if isDiscovered {
             return 0.3
         } else {
-            return 0.5
+            return 1
         }
     }
     

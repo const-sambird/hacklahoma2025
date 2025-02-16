@@ -36,7 +36,6 @@ struct MapView: View {
                     MapPolygon(coordinates: item.asMapCoords())
                         .foregroundStyle(.gray.opacity(item.mapOpacity))
                         .stroke(Color.blue, lineWidth: 1)
-                    Marker("Polygon \(offset)", coordinate: getCenterCoord(points: item.asMapCoords()))
                 }
             }
             .mapStyle(.standard(elevation: .realistic))
@@ -63,11 +62,11 @@ struct MapView: View {
         .sheet(isPresented: $isPresentingDiscoveryView) {
             NavigationView {
                 AreaDetailView(area: $areaToPresent)
-                    .navigationTitle("Presentation")
+                    .navigationTitle("Area information")
             }
         }
         .sheet(isPresented: $isPresentingUnlockedView) {
-            UnlockView(isShowing: $isPresentingUnlockedView)
+            UnlockView(isShowing: $isPresentingUnlockedView, areaUnlocked: $areaToPresent)
         }
     }
     

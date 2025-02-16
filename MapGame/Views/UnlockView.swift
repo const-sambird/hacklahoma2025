@@ -10,6 +10,7 @@ import ConfettiSwiftUI
 
 struct UnlockView: View {
     @Binding var isShowing : Bool
+    @Binding var areaUnlocked: Area
     
     @State private var trigger: Int = 0
     
@@ -22,6 +23,8 @@ struct UnlockView: View {
             }
             .confettiCannon(trigger: $trigger,  num: 100, confettis: [.text("📍"), .text("🗺️"), .text("🧭")], openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 180), radius: 500)
         
+            Text(areaUnlocked.name)
+                .font(.title2)
             Button(action : close) {
                 Text("Close")
                     .font(.title2)
@@ -40,5 +43,5 @@ struct UnlockView: View {
 }
 
 #Preview() {
-    UnlockView(isShowing : .constant(true))
+    UnlockView(isShowing : .constant(true), areaUnlocked: .constant(Area.sample[0]))
 }
